@@ -10,10 +10,12 @@ print('Lass uns Schere, Stein, Papier spielen!')
 #Logic system
 while True:
     random_1 = random.choice(computer_choice)
-    print(random_1)
-    user_input = input()
+    user_input = input(">>>")
     if user_input == 'Exit':
         sys.exit(1)
+    elif user_input == "help":
+        print("Schere, Stein, Papier bitte eingeben um zu spielen!")
+        print("Exit um das Spiel zu beenden!")
     elif random_1 == "Schere":
         if user_input == "Schere":
             print("Keiner hat gewonnen!")
